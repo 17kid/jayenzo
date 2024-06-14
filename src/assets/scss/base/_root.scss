@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    //fonts
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    //styling
+    background: linear-gradient(#a94ef4, #4c00ff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border: 1px red solid;
+
+}
