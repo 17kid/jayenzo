@@ -1,11 +1,29 @@
+<app-navbar></app-navbar>
 <div class="gaming-container">
-    <div id="twitch-embed">
-        <iframe src="https://player.twitch.tv/?video=1753734402&parent=17kid.github.io/jayenzo/" 
-                frameborder="0" 
-                allowfullscreen="true" 
-                scrolling="no" 
-                height="378" 
-                width="620">
-        </iframe>
+    <div class="section">
+        <div class="section-youtube">
+            <div class="section-youtube-player">
+                <youtube-player
+                    #youtubePlayer
+                    suggestedQuality="highres"
+                    [height]="300"
+                    [width]="500"
+                    videoId="Bd2ExKl_4i4"/>
+            </div>
+            <div class="section-youtube-heading">
+                <i class="fa-solid fa-gamepad gamepad"></i>
+            </div>
+            <div class="section-youtube-text">
+                I go by zo, shifting gears like luffy.
+                Love to game, check out my youtube and
+                follow my twitch and become a part of my 
+                nonsense.
+            </div>
+            <div class="section-youtube-socials">
+                <i class="fa-brands fa-square-youtube gaming-icon"></i>
+                <i class="fa-brands fa-twitch gaming-icon"></i>
+                <i class="fa-brands fa-discord gaming-icon"></i>
+            </div>
+        </div>
     </div>
 </div>
