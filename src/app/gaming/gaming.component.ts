@@ -1,11 +1,10 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
-import { YouTubePlayer } from '@angular/youtube-player';
 
 @Component({
   selector: 'app-gaming',
   standalone: true,
-  imports: [NavbarComponent, YouTubePlayer],
+  imports: [NavbarComponent],
   templateUrl: './gaming.component.html',
 })
 
@@ -14,7 +13,6 @@ import { YouTubePlayer } from '@angular/youtube-player';
 export class GamingComponent implements OnInit, AfterViewInit {
 
 
-  @ViewChild('youtubePlayer')youtubePlayerVariable!: ElementRef;
 
   videoHeight: number | undefined;
   videoWidth: number | undefined;
@@ -26,7 +24,6 @@ export class GamingComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log('yt variable', this.youtubePlayerVariable);
   }
 
   onResize() {
