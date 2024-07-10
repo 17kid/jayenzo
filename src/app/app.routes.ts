@@ -5,11 +5,11 @@ import { GamingComponent } from './gaming/gaming.component';
 
 export const routes: Routes = [
       {
-        path: 'gaming',
+        path: 'shift',
         component: GamingComponent,
       },
       {
-        path: 'landing',
+        path: 'superchargedferrari',
         component: LandingComponent,
       },
       {
@@ -18,12 +18,12 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'landing',
+        redirectTo: 'superchargedferrari',
         pathMatch:'full'
       },
       {
         path: '**',
-        redirectTo: 'landing',
+        redirectTo: 'superchargedferrari',
         pathMatch: 'full'
       }
 ];
