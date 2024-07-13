@@ -1,51 +1,56 @@
 .landing-container{
     max-width: 100vw;
+    min-height: 100vh;
     padding: 1em;
 }
 
 .landing-content {
     display: flex;
     flex-direction: row;
+    padding-bottom: 5em;
 
     &-section {
-        width: calc(100%/3);
+        width: calc(100%/2);
     }
 }
 
-.about {
-    height: 100vh;
-    padding: 1em;
+.column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 10;
+}
+
+.about {
+    margin-top: 3em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
 
     &-title {
         font-size: 2.5em;
-        transform: rotateY(60deg);
-        transform-origin: right;
         filter: drop-shadow(30px 0px 0px #4444dd);
         margin-bottom: 1.5em;
     }
 
     &-text {
+        width: 75%;
         text-wrap: wrap;
-        font-size: 1em;
-        transform: rotateY(50deg);
-        transform-origin: right;
+        font-size: 1.5em;
         filter: drop-shadow(30px 0px 0px #4444dd);
     }
 }
 
 .main {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-wrap: nowrap;
-    z-index: 10;
     
     &-title {
         font-size: 3.5em;
@@ -77,6 +82,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 1em;
     
 
     &-title {
@@ -88,15 +94,18 @@
 
     &-items {
         margin: 0;
+        z-index: 11;
         //item inside of link items
         .link-item {
             margin: 0;
+
             &-text {
-                -webkit-text-stroke: 1px white;
+                -webkit-text-stroke: 2px white;
                 color: transparent;
                 text-wrap: nowrap;
-                font-size: 5em;
+                font-size: 8em;
                 font-weight: 1000;
+                line-height: .8;
                 transform: rotateY(-70deg);
                 transform-origin: left;
                 filter: drop-shadow(-30px 10px 1px #4444dd);
@@ -104,7 +113,7 @@
             }
 
             &-text:hover {
-                color: black;
+                color: rgb(255, 255, 255);
                 cursor: pointer;
                 transform: rotateY(-55deg);
                 filter: drop-shadow(-30px 10px 4px #4444dd00);
